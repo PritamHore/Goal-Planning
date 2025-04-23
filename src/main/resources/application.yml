@@ -16,7 +16,7 @@ spring:
 gemini:
   api:
     url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=
-    key: {YOUR-API-KEY}
+    key: YOUR-API-KEY
 
 server:
   port: 10001
