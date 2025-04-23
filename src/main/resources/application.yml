@@ -5,13 +5,22 @@ spring:
     vertex:
       ai:
         gemini:
-          projectId: gen-lang-client-0064138747
+          projectId: YOUR-PROJECT-ID
           location: asia-southeast1
   datasource:
     url: jdbc:mysql://localhost:3306/google-ai?useSSL=false&serverTimezone=Asia/Kolkata
     username: root
     password: your_db_password
     driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # options: none, validate, update, create, create-drop
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
           
 gemini:
   api:
