@@ -8,7 +8,7 @@ spring:
           projectId: YOUR-PROJECT-ID
           location: asia-southeast1
   datasource:
-    url: jdbc:mysql://localhost:3306/google-ai?useSSL=false&serverTimezone=Asia/Kolkata
+    url: jdbc:mysql://localhost:3306/google-ai?useSSL=false&serverTimezone=Asia/Kolkata&createDatabaseIfNotExist=true
     username: root
     password: your_db_password
     driver-class-name: com.mysql.cj.jdbc.Driver
