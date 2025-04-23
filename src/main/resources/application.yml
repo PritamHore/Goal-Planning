@@ -7,11 +7,16 @@ spring:
         gemini:
           projectId: gen-lang-client-0064138747
           location: asia-southeast1
+  datasource:
+    url: jdbc:mysql://localhost:3306/google-ai?useSSL=false&serverTimezone=Asia/Kolkata
+    username: root
+    password: your_db_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
           
 gemini:
   api:
     url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=
-    key: AIzaSyD6EDIlDq76kwZibOw9-xxeqanA9z8gpts
+    key: {YOUR-API-KEY}
 
 server:
   port: 10001
