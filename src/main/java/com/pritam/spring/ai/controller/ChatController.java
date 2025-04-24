@@ -11,9 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pritam.spring.ai.service.ChatService;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+
 
 @RestController
 @RequestMapping("/api/v1/chat")
+@SecurityRequirement(name = "token")
 public class ChatController {
 	
 	@Autowired
