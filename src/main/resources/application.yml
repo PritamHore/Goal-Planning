@@ -8,9 +8,9 @@ spring:
           projectId: gen-lang-client-0064138747
           location: asia-southeast1
   datasource:
-    url: jdbc:mysql://localhost:3306/google-ai?useSSL=false&serverTimezone=Asia/Kolkata&createDatabaseIfNotExist=true
+    url: jdbc:mysql://mysql.railway.internal:3306/railway?useSSL=false&serverTimezone=Asia/Kolkata&createDatabaseIfNotExist=true
     username: root
-    password: pritamroot
+    password: olEjVGisfTEXycQeAJhGRiKPNWkCWVDQ
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
