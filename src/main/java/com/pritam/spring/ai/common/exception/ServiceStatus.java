@@ -8,7 +8,9 @@ import org.apache.commons.lang3.StringUtils;
 
 public enum ServiceStatus {
 	E000("E000", "Operation Failed"),
-	E001("E001", "Failed to create, User Type is already present.");
+	E001("E001", "Failed to create, User Type is already present."),
+	E002("E002", "User Type is not present with Id {0}"),
+	E003("E003", "User is already present with email {0}");
 	
 	
 	private String code;
